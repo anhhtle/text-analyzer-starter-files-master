@@ -35,6 +35,9 @@ function getAverageWordLength(token) {
 function getAverageSentenceLength(text) {
   console.log(text.match(/[?!.]+/g));
   var $sentenceCount = text.match(/[?!.]+/g) ? text.match(/[?!.]+/g).length: 1;
+  //if(text.match(/[?!.]+/g).length > 0 && (text[text.length-1] !== '.' || text[text.length-1] !== '!' || text[text.length-1] !== '?'))
+  	 //$sentenceCount++;
+  //console.log(text[text.length-1]);
   console.log('number of sentences: ' + $sentenceCount);
   $averageSentenceLength = ($wordCount / $sentenceCount).toFixed(2);
 }
